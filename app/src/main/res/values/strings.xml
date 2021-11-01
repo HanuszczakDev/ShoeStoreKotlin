@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="title_login_screen">SHOE APP</string>
+    <string name="login_or_create_account">Login or create profile</string>
+    <string name="login_hint">login</string>
+    <string name="password_hint">password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">register</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_name">User Name</string>
+    <string name="welcome_notes">Let\'s get started!\n\nFollow the instruction notes for more info about the Shoe Store App</string>
+    <string name="instruction_notes">In this app you can look through list of shoes.\n\nIf you want to add new shoe to the list, just use the Fab button to go to detail screen and fill the essential data. New shoe element will appear on the list!\n\nUse the shoe button below and see the actual list.</string>
+    <string name="go_to_instruction">go to instruction</string>
+    <string name="instruction">Instruction</string>
+    <string name="shoe_button_description">button to shoe list</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">45.5</string>
+    <string name="shoe_size_formatted">Size: %s</string>
+    <string name="shoe_description">shoe description</string>
+    <string name="fab_description">button to add new shoe</string>
+    <string name="shoe_image_description">shoe image</string>
+    <string name="add_shoe">Add shoe</string>
+    <string name="shoe_name_details">Enter shoe name</string>
+    <string name="shoe_company_details">Shoe company</string>
+    <string name="shoe_description_details">Shoe description</string>
+    <string name="shoe_size_details">Shoe size</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="accept_button">Accept</string>
+    <string name="logout_menu_item">Logout</string>
+</resources>
