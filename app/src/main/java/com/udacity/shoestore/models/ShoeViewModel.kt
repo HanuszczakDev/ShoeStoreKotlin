@@ -8,14 +8,6 @@ import androidx.navigation.findNavController
 import com.udacity.shoestore.R
 import timber.log.Timber
 
-//data class Shoe (
-//    var name: String,
-//    var size: String,
-//    var company: String,
-//    var description: String,
-//    var image: Int
-//)
-
 class ShoeViewModel : ViewModel() {
 
     private val _shoeList = MutableLiveData<MutableList<Shoe>>()
