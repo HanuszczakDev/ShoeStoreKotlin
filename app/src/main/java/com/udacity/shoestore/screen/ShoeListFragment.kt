@@ -42,8 +42,6 @@ class ShoeListFragment : Fragment() {
             false
         )
 
-        binding.lifecycleOwner = this
-
         binding.fab.setOnClickListener {
             findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }

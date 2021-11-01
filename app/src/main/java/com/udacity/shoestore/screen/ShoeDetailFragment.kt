@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
@@ -20,8 +20,6 @@ class ShoeDetailFragment : Fragment() {
     private lateinit var binding: FragmentShoeDetailBinding
 
     private val viewModel: ShoeViewModel by activityViewModels()
-
-//    private val shoeObject = Shoe("a","b","c","d", R.drawable.shoe)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,27 +37,17 @@ class ShoeDetailFragment : Fragment() {
 
         binding.shoe = Shoe("","","","", R.drawable.shoe)
 
-//        binding.acceptButton.setOnClickListener {
-//            if (!validate(shoeObject)) {
-//                viewModel.addShoe(shoeObject)
-//                findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailDestinationToShoeListDestination())
-//            } else {
-//                Toast.makeText(requireContext(), "Please fill all the fields", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-
         binding.cancelButton.setOnClickListener {
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailDestinationToShoeListDestination())
         }
 
-        return binding.root
-    }
+        viewModel.showMessage.observe(viewLifecycleOwner, Observer { showMessage ->
+            if (showMessage) {
+                Toast.makeText(requireContext(), "fill all the fields!", Toast.LENGTH_SHORT).show()
+            }
+        })
 
-    private fun validate(shoe: Shoe): Boolean {
-        return shoe.name.isNotEmpty()
-                && shoe.company.isNotEmpty()
-                && shoe.description.isNotEmpty()
-                && shoe.size.isNotEmpty()
+        return binding.root
     }
 
 }
