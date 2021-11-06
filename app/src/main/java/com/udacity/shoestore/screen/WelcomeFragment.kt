@@ -19,7 +19,7 @@ class WelcomeFragment : Fragment() {
 
     private lateinit var binding: FragmentWelcomeBinding
 
-    val welcomeViewModel: WelcomeViewModel by activityViewModels()
+    private val welcomeViewModel: WelcomeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
