@@ -29,4 +29,6 @@
     <string name="cancel_button">Cancel</string>
     <string name="accept_button">Accept</string>
     <string name="logout_menu_item">Logout</string>
+    <string name="hint_edit_text">Enter text to convert</string>
+    <string name="convert_button">Convert</string>
 </resources>
