@@ -8,7 +8,9 @@ This project consist of five screens:
 4. Shoe Listing screen
 5. Shoe Detail screen for adding a new shoe
 
-![App Flow](images/AppFLow.gif)
+![App Flow Part 1](images/part1.gif)
+
+![App Flow Part 2](images/part2.gif)
 
 ## Steps taken to create app
 
